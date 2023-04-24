@@ -13,23 +13,26 @@ body {
 	padding-bottom: 20px;
 	padding-left: auto;
 	padding-right: auto;
+	text-align: center;
 }
 
-.header {
+.header h2 {
 	text-align: center;
+	color: red;
+	text-decoration: wavy underline;
 }
 
 #fieldset {
 	border: 3px solid red;
-	padding: 20px 20px 20px 20px;
-	margin: 10px 10px 10px 10px;
+	padding: 0.25in 1cm 0.25in 1cm;
+	margin: 10mm 10mm 10mm 10mm;
 }
 
 video {
 	margin-right: auto;
 	margin-left: 40px;
-	margin-bottom: 40px;
-	margin-top: 0px;
+	margin-bottom: 5vw;
+	margin-top: 1ex;
 }
 
 audio {
