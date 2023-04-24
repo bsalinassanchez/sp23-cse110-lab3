@@ -1,3 +1,13 @@
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2 {
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* setting the entire page background to white and setting inline */
 body {
 	background-color: #ffffff;
 	display: inline;
@@ -8,6 +18,8 @@ body {
 		background-color: rgb(211, 211, 211);
 	}
 }
+
+/* styling header title style */
 #title {
 	border-width: 0.3em;
 	border-style: dashed;
@@ -21,11 +33,14 @@ body {
 	text-align: center;
 }
 
+/* setting the subheader title with red text and wavy underline */
 .header h2 {
 	text-align: center;
 	color: red;
 	text-decoration: wavy underline;
 }
+
+/* styling unordered list with flex and column style */
 header ul {
 	display: flex;
 	flex-direction: column;
@@ -33,6 +48,7 @@ header ul {
 	flex-wrap: nowrap;
 }
 
+/* organizing the form at the bottom of page */
 #fieldset {
 	display: inline-block;
 	border: 3px solid red;
@@ -40,6 +56,7 @@ header ul {
 	margin: 10mm 10mm 10mm 10mm;
 }
 
+/* setting up the spacings of the video element */
 video {
 	margin-right: auto;
 	margin-left: 40px;
@@ -48,13 +65,14 @@ video {
 	position: static;
 }
 
+/* setting up the spacings of the audio element */
 audio {
 	margin: auto;
 	position: relative;
 }
 
+/* styling the member cards */
 .member {
-	font-family: "Roboto", sans-serif;
 	height: 150px;
 	width: 350px;
 	border: 1px solid black;
@@ -65,18 +83,40 @@ audio {
 	min-width: 250px;
 	padding: 20px;
 }
+
+[class="member"] {
+	background-color: antiquewhite;
+}
+
+/* emphasizes a specific member card upon hover with border and shadow */
 .member:hover {
 	border-color: red;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-main #members {
+/* member card member name color */
+.member > span {
+	color: hsl(240, 100%, 25%);
+}
+
+/* setting the member card display grid */
+main section.members {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	column-gap: 0px;
 	row-gap: 0px;
 }
 
+/* upon submitting form, highlights button in yellow! */
 button:active {
 	background: yellow;
+}
+
+h3 ~ p {
+	color: purple;
+	text-decoration: none;
+}
+
+li:first-of-type + li {
+	color: green;
 }
